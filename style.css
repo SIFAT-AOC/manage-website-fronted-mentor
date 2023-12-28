@@ -212,9 +212,7 @@ body{
   font-weight: var(--fw-semi-bold);
   gap: clamp(var(--size-500) ,5vw,var(--size-700));
 }
-.flow > * + *{
-  outline: 1px solid lime;
-}
+
 @media (max-width:50em){
   .primary-navigation{
     display: none;
@@ -349,4 +347,22 @@ body{
 .display-md-inline-flex{
   display: inline-flex;
 }
+}
+
+/* 28-12-2023 WRITE FROM HERE*/
+
+/* footer navigation */
+
+.footer-nav {
+  columns: 2;
+  gap: clamp(var(--size-200), 30vw, var(--size-900));
+}
+
+.footer-nav a {
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+}
+
+.footer-nav a:is(:hover, :focus) {
+  color: var(--clr-accent-400);
 }
